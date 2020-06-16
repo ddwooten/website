@@ -62,13 +62,13 @@
 										<section>
 											<a href="#" class="image rotate"><img src="images/tower.jpg" alt="" /></a>
 											<h3>Test driven development</h3>
-											<p>From the begining of the project ADER was designed to be a living code. As such, not only are the
+											<p>From the beginning of the project ADER was designed to be a living code. As such, not only are the
 											comments and documentation geared towards future development but ADER started and released as a 
 											test-driven project. Test-driven projects are those in which the code to test the product is written
-											before the product is created. While incuring some overhead in the planning stages this approach tends
+											before the product is created. While incurring some overhead in the planning stages this approach tends
 											to shed light on future problems long before they arise. Additionally, such an extensive test suite allows
 											for future developers to be assured that their changes have not broken some other part of the product. This
-											concern is particuarly important for products which interact with an environment of other platforms.</p>
+											concern is particularly important for products which interact with an environment of other platforms.</p>
 										</section>
 									</section>
 
@@ -78,24 +78,31 @@
 								<!-- Content -->
 									<section id="content">
 										<a href="#" class="image fit"><img src="images/town.jpg" alt="" /></a>
-										<h3>A goal was set</h3>
-										<p>Myself, Susan Kilean Hwang, Susan Hao, and Zhimin Chen decided to build a computer vision system which would be
-										able to label the displayed emotion on a given human face. With consultation from Frank Cleary we decided a system
-										based on live webcam video had more potential future use.</p>
+										<h3>Building off of legacy code</h3>
+										<p> The ADER code was the primary project of my graduate thesis at UC Berkeley. ADER was
+										developed by myself, Daniel Wooten, and it represents a first-of-its-kind modeling
+										solution for an emerging class of nuclear reactor. ADER exists as more than 30 thousand lines of
+										C code written as a direct integration into the very popular nuclear simulation tool, SERPENT 2 -
+										itself composed of more than 1 million lines of C code which is why ADER was written in C.</p>
 
-										<p>As a team we took this idea from the whiteboard to the web. We trawled the web for data, built and tested
-										several models quickly selecting a transfer model based off of the VGG-16 architecture. Using cv2 greatly reduced the
-										amount of back-end effort we would have had to put into image preparation for our model in the on-line pipeline.</p>
+										<p>I took ADER through every stage of development, from conception and whiteboarding to documentation
+										and distribution. From the beginning ADER was designed with the end-user as the priority and the future
+										developer always in mind. The error messages are plentiful and informative while the code comments are
+										crisp and meaningful just as the code itself is clean and straightforward. 
+										ADER's creation as a test-driven development saved myself dozens of hours
+										in terms of debugging and adaptation. The development of ADER spanned many years and of course the
+										design requirements and objectives changed along the way with its comprehensive test suite easing
+										that process.</p>
 
-										<p>We successfully developed a Flask based web app which exceeded our expectations - in real time it was able to
-										identify one or multiple human faces and correctly name the emotion present on those faces even as the faces
-										transitioned their emotional state.</p>
+										<p>Just because I built ADER does not mean I worked alone. ADER is an extension to an existing, and
+										massive, nuclear simulation code which itself is in continual development as is the nature of leading
+										research codes. As such the biggest challenge in creating ADER was integrating with and understanding
+										the base code as it was not written cleanly or with future developers in mind. My favorite error message from
+										SERPENT may have been "Error: [****] we shouldn't be here". That said, the development team for SERPENT 2
+										is very easy to work.</p>
 
-										<p>With my background in engineering optimization I'm proud of what I see as my key contribution,
-										saving the team a little 
-										over a day in hyperparameter search time via a simple linear minimization approach. I enjoyed pair-coding and
-										helping to build the various components of our model, user interface, etc., but saving the team time is my own
-										contribution I can smile about.</p>
+										<p>ADER is not my only software project by far, but it is my largest and one that I'm proud of - not because
+										I 'completed' it but because I know I built it such that it would live on past my care of it.</p>
 
 									</section>
 
