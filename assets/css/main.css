@@ -2561,7 +2561,7 @@ input, select, textarea {
 			-ms-transform: rotate(-90deg);
 			transform: rotate(-90deg);
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 8em 0 8em 0;
 			width: 100%;
 		}
 			.image.rotate img {
