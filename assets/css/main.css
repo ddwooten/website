@@ -2554,6 +2554,17 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.rotate {
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			transform: rotate(90deg);
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
