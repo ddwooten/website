@@ -107,9 +107,19 @@
 
 										<h3>Configuring SpaCy</h3>
 										<p> I mentioned I wasn't going to reinvent the wheel and so the NLU (Natural Language Understanding)
-										libarary that I'll be using is SpaCy. SpaCy is a python NLU library intended for industrial level usage
+										library that I'll be using is SpaCy. SpaCy is a python NLU library intended for industrial level usage
 										and I've decided to use it because it's what a company I have an upcoming interview with uses and I'd like
 										to get familiar with it. That said, just from the get-go, SpaCy is well documented and it looks clean.</p>
+
+										<p>On day 3 I went through SpaCy's introduction course and I thought it was very well designed -
+										I certainly left with an idea of how I would use SpaCy in this project</p>
+
+										<h3>It all lives on the web!</h3>
+										<p>Day four has been all about the backend webserver side of this project. I configured an AWS EC2 t2large
+										instance to handle user input and response. Now, I could have let the DanBot page be entirely hosted on the
+										AWS EC2 instance, and that would have been easier. That said, I wanted the page to still function if I took
+										my EC2 instance down and so I decided to host the DanBot page and direct user input/response to the EC2 
+										instance via a simple https post/get.</p>
 
 
 									</section>
