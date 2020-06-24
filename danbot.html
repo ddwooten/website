@@ -43,7 +43,7 @@
 						</header>
 						<span class="image"><img src="images/face.jpg" alt="" /></span>
 					</div>
-					<div class="chat_popup" id="danchat">
+					<div class="content" id="danchat">
 						<form>
 							<h3>Chat</h3>
 							<label for="msg"<b>Message</b></label>
@@ -96,11 +96,11 @@
 				document .querySelector("close_button") .addEventListener("click", closeForm);
 
 				function openForm(){
-					document.querySelector(".chat_popup").style.display="block";
+					document.querySelector("danchat").style.display="block";
 				}
 
 				function closeForm(){
-					document.querySelector(".chat_popup").style.display="none";
+					document.querySelector("danchat").style.display="none";
 				}
 			</script>
 
