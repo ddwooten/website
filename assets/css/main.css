@@ -638,6 +638,10 @@ input, select, textarea {
 		width: 70em;
 		background: #e44c65;
 		border: #000000;
+		position: fixed;
+		bottom: 0;
+		left: 15px;
+		display: none;
 
 	}
 
