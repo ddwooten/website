@@ -39,19 +39,14 @@
 					<div class="content">
 						<header>
 							<h2>DanBot</h2>
-							<button id="open_button" class="button primary" onclick="openForm()">Chat</button>
-						</header>
-						<span class="image"><img src="images/face.jpg" alt="" /></span>
-					</div>
-					<div class="chat_popup" id="danchat">
 						<form>
-							<h3>Chat</h3>
-							<label for="msg"<b>Message</b></label>
+							<label for="msg"<b>Chat</b></label>
 							<textarea placeholder="What would you like to know?" name="msg" required></textarea>
 
 							<button id="ask_button" type="submit" class="button primary">Send</button>
-							<button id="close_button" type"button" class="button" onclick="closeChat()">Close</button>
 						</form>
+						</header>
+						<span class="image"><img src="images/face.jpg" alt="" /></span>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
@@ -91,18 +86,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				document .querySelector(".open_button") .addEventListener("click", openForm);
-				document .querySelector(".close_button") .addEventListener("click", closeForm);
-
-				function openForm(){
-					document.querySelector(".danchat").style.display="block";
-				}
-
-				function closeForm(){
-					document.querySelector(".danchat").style.display="none";
-				}
-			</script>
 
 	</body>
 </html>
