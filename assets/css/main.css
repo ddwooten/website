@@ -630,6 +630,58 @@ input, select, textarea {
 
 	}
 
+/* Chat Pop Up */
+
+	.chat_popup {
+		margin: 0 auto;
+		max-width: calc(60% - 4em);
+		width: 70em;
+		background: #e44c65;
+		border: #000000;
+
+	}
+
+		.chat_popup.xsmall {
+			width: 17.5em;
+		}
+
+		.chat_popup.small {
+			width: 35em;
+		}
+
+		.chat_popup.medium {
+			width: 52.5em;
+		}
+
+		.chat_popup.large {
+			width: 87.5em;
+		}
+
+		.chat_popup.xlarge {
+			width: 105em;
+		}
+
+		.chat_popup.max {
+			width: 100%;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.chatpopup {
+				width: 60%;
+				max-width: 100%;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.chat_popup{
+				width: 100% !important;
+			}
+
+		}
+
 /* Container */
 
 	.container {
