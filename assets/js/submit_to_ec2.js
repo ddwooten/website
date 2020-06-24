@@ -3,6 +3,6 @@
   */
 function submit_to_ec2() {
 
-	window.alert("submit_to_ec2()");
+	window.alert("Function test");
 
 }
