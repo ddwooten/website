@@ -38,12 +38,20 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<form class="cta">
-								<div class="col-8 col-12-xsmall"><input type="text" id="user_question" placeholder="What would you like to know?" /></div>
-								<div class="col-4 col-12-xsmall"><button value="Ask me :)" onclick="submit_to_ec2()" class="fit primary" /></div>
-							</form>
+							<h2>DanBot</h2>
+							<button class="button primary" onclick="openForm()">Chat</button>
 						</header>
 						<span class="image"><img src="images/face.jpg" alt="" /></span>
+					</div>
+					<div class="chat-popup" id="danchat">
+						<form>
+							<h3>Chat</h3>
+							<label for="msg"<b>Message</b></label>
+							<textarea placeholder="What would you like to know?" name="msg" required></textarea>
+
+							<button type="submit" class="button primary">Send</button>
+							<button type"button" class="button" onclick="closeChat()">Close</button>
+						</form>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
