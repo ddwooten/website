@@ -3,6 +3,6 @@
   */
 function submit_to_ec2() {
 
-	window.alert("Function test");
+	document.getElementById("chatarea").placeholder = "Scooby Doo!"
 
 }
