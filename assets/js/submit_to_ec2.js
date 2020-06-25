@@ -7,6 +7,8 @@ function submit_to_ec2() {
 
 	url = "ec2-52-86-185-169.compute-1.amazonaws.com";
 
+	url_test = "https://ipinfo.io/json"
+
 	otherParam = {
 
 		method: "POST"
