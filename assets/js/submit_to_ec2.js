@@ -17,7 +17,8 @@ function submit_to_ec2() {
 
 	fetch(url_test)
 		.then(response => response.json())
-		.then(response => console.log(response));
+		.then(response => console.log(response))
+		.then(data = response);
 
 	
 	document.getElementById("chatarea").placeholder = "Sonya is best girl";
