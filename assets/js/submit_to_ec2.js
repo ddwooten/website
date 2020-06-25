@@ -19,12 +19,11 @@ function submit_to_ec2() {
 
 			console.log(httpObj.responseText);
 
-			var data = JSON.parse(httpObj.responseText);
+			document.getElementById("chatarea").placeholder = JSON.parse(httpObj.responseText).city;
 
 		}
 
 	}
 
-	document.getElementById("chatarea").placeholder = data.city;
 
 }
