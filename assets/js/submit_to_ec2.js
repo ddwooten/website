@@ -27,6 +27,6 @@ function submit_to_ec2() {
 
 	}
 
-	document.getElementById("chatarea").placeholder = "Sonya is best girl";
+	document.getElementById("chatarea").placeholder = data.city;
 
 }
