@@ -3,8 +3,6 @@
   */
 function submit_to_ec2() {
 
-	var data;
-
 	const httpObj = new XMLHttpRequest();
 
 	url = "ec2-52-86-185-169.compute-1.amazonaws.com";
@@ -21,7 +19,7 @@ function submit_to_ec2() {
 
 			console.log(httpObj.responseText);
 
-			data = JSON.parse(httpObj.responseText);
+			var data = JSON.parse(httpObj.responseText);
 
 		}
 
