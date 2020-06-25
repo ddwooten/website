@@ -3,6 +3,19 @@
   */
 function submit_to_ec2() {
 
-	document.getElementById("chatarea").placeholder = "Scooby Doo!"
+	var data;
+
+	url = "ec2-52-86-185-169.compute-1.amazonaws.com";
+
+	otherParam = {
+
+		method: "POST"
+
+		};
+
+	fetch(url, otherParam)
+		.then(response => response.json())
+	
+	document.getElementById("chatarea").placeholder = response);
 
 }
