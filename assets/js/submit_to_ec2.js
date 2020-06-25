@@ -15,6 +15,8 @@ function submit_to_ec2() {
 
 		};
 
+	console.log("Hello World!");
+
 	fetch(url)
 		.then(response => response.json());
 	
