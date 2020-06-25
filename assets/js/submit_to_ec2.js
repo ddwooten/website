@@ -15,10 +15,10 @@ function submit_to_ec2() {
 
 		};
 
-	console.log("Hello World!");
-
-	fetch(url)
+	fetch(url_test)
 		.then(response => response.json());
+
+	console.log(response);
 	
 	document.getElementById("chatarea").placeholder = "Scooby Doo";
 
