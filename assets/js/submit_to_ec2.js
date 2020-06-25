@@ -20,6 +20,6 @@ function submit_to_ec2() {
 	fetch(url)
 		.then(response => response.json());
 	
-	document.getElementById("chatarea").placeholder = "Scooby Doo");
+	document.getElementById("chatarea").placeholder = "Scooby Doo";
 
 }
