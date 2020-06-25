@@ -20,6 +20,6 @@ function submit_to_ec2() {
 		.then(response => console.log(response));
 
 	
-	document.getElementById("chatarea").placeholder = "Scooby Doo";
+	document.getElementById("chatarea").placeholder = "Sonya is best girl";
 
 }
