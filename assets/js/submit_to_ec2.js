@@ -5,22 +5,26 @@ function submit_to_ec2() {
 
 	var data;
 
+	const httpObj = new XMLHttpRequest();
+
 	url = "ec2-52-86-185-169.compute-1.amazonaws.com";
 
 	url_test = "https://ipinfo.io/json";
 
-	otherParam = {
+	httpObj.open("GET", url_test);
 
-		method: "POST"
+	httpObj.send();
 
-		};
+	httpObj.onreadystatechang = function(){
 
-	fetch(url_test)
-		.then(response => response.json())
-		.then(response => console.log(response))
-		.then(data = response);
+		if(this.readyState == 4 && this.status == 200){
 
-	
+			console.log(httpObj.responseText)
+
+		}
+
+	}
+
 	document.getElementById("chatarea").placeholder = "Sonya is best girl";
 
 }
