@@ -21,7 +21,7 @@ function submit_to_ec2() {
 
 			console.log(httpObj.responseText);
 
-			data = httpObj.responseText;
+			data = JSON.parse(httpObj.responseText);
 
 		}
 
