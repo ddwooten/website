@@ -15,7 +15,7 @@ function submit_to_ec2() {
 
 		};
 
-	fetch(url, otherParam)
+	fetch(url)
 		.then(response => response.json());
 	
 	document.getElementById("chatarea").placeholder = "Scooby Doo");
