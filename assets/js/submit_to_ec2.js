@@ -15,7 +15,7 @@ function submit_to_ec2() {
 
 	httpObj.send();
 
-	httpObj.onreadystatechang = function(){
+	httpObj.onreadystatechange = function(){
 
 		if(this.readyState == 4 && this.status == 200){
 
