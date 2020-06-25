@@ -9,7 +9,7 @@ function submit_to_ec2() {
 
 	url_test = "https://ipinfo.io/json";
 
-	httpObj.open("GET", url_test);
+	httpObj.open("GET", url);
 
 	httpObj.send();
 
@@ -19,7 +19,7 @@ function submit_to_ec2() {
 
 			console.log(httpObj.responseText);
 
-			document.getElementById("chatarea").placeholder = JSON.parse(httpObj.responseText).city;
+			document.getElementById("chatarea").placeholder = httpObj.responseText;
 
 		}
 
