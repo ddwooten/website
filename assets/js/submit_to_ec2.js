@@ -5,11 +5,11 @@ function submit_to_ec2() {
 
 	const httpObj = new XMLHttpRequest();
 
-	url = "https://ec2-52-86-185-169.compute-1.amazonaws.com/chatbot";
+	url = "https://ec2-52-86-185-169.compute-1.amazonaws.com:5000/chatbot";
 
 	url_test = "https://ipinfo.io/json";
 
-	httpObj.open("GET", url_test);
+	httpObj.open("GET", url);
 
 	httpObj.send();
 
