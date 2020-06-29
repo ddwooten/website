@@ -9,6 +9,10 @@ function submit_to_ec2() {
 
 	url_test = "https://ipinfo.io/json";
 
+	httpObj.open("OPTIONS", url);
+
+	httpObj.send();
+
 	httpObj.open("POST", url);
 
 	httpObj.send(JSON.stringify({passValue:'penguin'}));
