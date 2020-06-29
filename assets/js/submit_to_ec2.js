@@ -11,7 +11,7 @@ function submit_to_ec2() {
 
 	httpObj.open("POST", url);
 
-	httpObj.send({'passValue':'penguin'});
+	httpObj.send({passValue:'penguin'});
 
 	httpObj.onreadystatechange = function(){
 
