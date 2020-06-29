@@ -9,7 +9,7 @@ function submit_to_ec2() {
 
 	url_test = "https://ipinfo.io/json";
 
-	httpObj.open("GET", url);
+	httpObj.open("POST", url);
 
 	httpObj.send();
 
