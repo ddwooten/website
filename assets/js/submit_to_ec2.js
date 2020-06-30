@@ -5,13 +5,13 @@ function submit_to_ec2() {
 
 	const httpObj = new XMLHttpRequest();
 
-	url = "https://ec2-52-86-185-169.compute-1.amazonaws.com:5000/chatbot?passValue=puppies";
+	url = "https://ec2-52-86-185-169.compute-1.amazonaws.com:5000/chatbot";
 
 	httpObj.open("POST", url);
 
 	httpObj.setRequestHeader('Content-type', 'application/json')
 
-	httpObj.send(JSON.stringify({passValue:'penguin'}));
+	httpObj.send(JSON.stringify({passValue:document.getElementById('chatarea').value}));
 
 	httpObj.onreadystatechange = function(){
 
