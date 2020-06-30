@@ -9,9 +9,9 @@ function submit_to_ec2() {
 
 	httpObj.open("POST", url);
 
-	httpObj.setRequestHeader('Content-type', 'text/plain')
+	httpObj.setRequestHeader('Content-type', 'application/json')
 
-	httpObj.send("passValue:penguin");
+	httpObj.send({passValue:'penguin'});
 
 	httpObj.onreadystatechange = function(){
 
