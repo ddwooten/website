@@ -19,7 +19,7 @@ function submit_to_ec2() {
 
 			console.log(httpObj.responseText);
 
-			document.getElementById("chatarea").placeholder = httpObj.responseText;
+			document.getElementById("chatarea").value = httpObj.responseText;
 
 		}
 
