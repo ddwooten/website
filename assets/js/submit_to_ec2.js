@@ -11,7 +11,7 @@ function submit_to_ec2() {
 
 	httpObj.open("POST", url);
 
-	httoObj.setRequestHeader('Content-type', 'text/plain')
+	httpObj.setRequestHeader('Content-type', 'text/plain')
 
 	httpObj.send("passValue:penguin");
 
