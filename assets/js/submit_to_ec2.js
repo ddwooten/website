@@ -5,7 +5,7 @@ function submit_to_ec2() {
 
 	const httpObj = new XMLHttpRequest();
 
-	url = "https://ec2-52-86-185-169.compute-1.amazonaws.com:5000/chatbot/?passValue=puppies";
+	url = "https://ec2-52-86-185-169.compute-1.amazonaws.com:5000/chatbot?passValue=puppies";
 
 	httpObj.open("POST", url);
 
