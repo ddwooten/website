@@ -11,7 +11,7 @@ function submit_to_ec2() {
 
 	httpObj.setRequestHeader('Content-type', 'application/json')
 
-	httpObj.send({passValue:'penguin'});
+	httpObj.send(JSON.strinify({passValue:'penguin'}));
 
 	httpObj.onreadystatechange = function(){
 
