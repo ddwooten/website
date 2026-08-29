@@ -9,6 +9,7 @@
 		<title>ADER - Daniel Wooten</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="ADER - Advanced Depletion Extension for Reprocessing. A 30,000-line C extension to the SERPENT 2 Monte Carlo reactor physics code, built for circulating, liquid-fueled reactors." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -21,13 +22,15 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
+							<li><a href="nuclear.html">Nuclear</a></li>
 							<li><a href="coming_soon.html">DanBot</a></li>
 							<li>
 								<a href="#">Projects</a>
 								<ul>
+									<li><a href="index.html#two">Card AI R&amp;D</a></li>
+									<li><a href="ader.html">ADER</a></li>
 									<li><a href="chatbot.html">Creation of DanBot</a></li>
 									<li><a href="emotion.html">Emotional Sight</a></li>
-									<li><a href="ader.html">ADER</a></li>
 									<li><a href="recommender.html">Recommenders</a></li>
 								</ul>
 							</li>
@@ -42,8 +45,9 @@
 						<header class="major">
 							<h2>ADER</h2>
 							<p><b>A</b>dvanced <b>D</b>epletion <b>E</b>xtension for <b>R</b>eprocessing</p>
-							<ul class="action">
+							<ul class="actions">
 								<li><a href="https://www.github.com/ddwooten/ADER_pub" class="button">Project Github</a></li>
+								<li><a href="nuclear.html" class="button">Nuclear Work</a></li>
 							</ul>
 						</header>
 						<div class="row gtr-150">
@@ -62,10 +66,22 @@
 										</section>
 										<hr />
 										<section>
-											<a href="#" class="image rotate"><img src="images/tower.jpg" alt="" /></a>
+											<h3>At a glance</h3>
+											<ul>
+												<li><strong>~30,000 lines</strong> of C, integrated directly into the SERPENT 2 source</li>
+												<li><strong>~15,000 lines of unit and integration tests</strong> in C and Python</li>
+												<li>Complete <strong>user manual and API documentation</strong></li>
+												<li>Chemistry-aware <strong>linear optimization</strong> engine (CLP)</li>
+												<li>Presented at the <strong>5th International Serpent User Group Meeting</strong>, Knoxville, TN</li>
+												<li>Primary project of my UC Berkeley doctoral thesis</li>
+											</ul>
+										</section>
+										<hr />
+										<section>
+											<span class="image fit"><img src="images/tower.jpg" alt="" /></span>
 											<h3>Test driven development</h3>
 											<p>From the beginning of the project ADER was designed to be a living code. As such, not only are the
-											comments and documentation geared towards future development but ADER started and released as a 
+											comments and documentation geared towards future development but ADER started and released as a
 											test-driven project. Test-driven projects are those in which the code to test the product is written
 											before the product is created. While incurring some overhead in the planning stages this approach tends
 											to shed light on future problems long before they arise. Additionally, such an extensive test suite allows
@@ -79,7 +95,21 @@
 
 								<!-- Content -->
 									<section id="content">
-										<a href="#" class="image fit"><img src="images/town.jpg" alt="" /></a>
+										<span class="image fit"><img src="images/town.jpg" alt="" /></span>
+
+										<h3>Why reprocessing</h3>
+										<p>The R in ADER is for <strong>Reprocessing</strong>, and it is the whole reason the project exists.
+										Conventional depletion tools assume a fuel load: you tell the code what is in the core, and it tells you
+										what happens to it. That assumption quietly breaks for any reactor that moves and reprocesses its fuel.
+										Composition is no longer an input. It becomes a decision variable, coupled to the depletion state, and
+										it has to satisfy physical and chemical constraints at every step.</p>
+
+										<p>ADER's core is a <strong>chemistry-aware linear optimization engine</strong> that operates on the
+										depletion state and <em>solves</em> for fuel-load composition rather than accepting it. I built it because
+										the fuel-cycle tools available for circulating, liquid-fueled systems rested on assumptions I could not
+										defend, and I wanted depletion results I would be willing to put in front of a regulator. Any program
+										pursuing fuel recycling alongside a reactor is working on the same problem.</p>
+
 										<h3>Building off of legacy code</h3>
 										<p> The ADER code was the primary project of my graduate thesis at UC Berkeley. ADER was
 										developed by myself, Daniel Wooten, and it represents a first-of-its-kind modeling
@@ -90,7 +120,7 @@
 										<p>I took ADER through every stage of development, from conception and whiteboarding to documentation
 										and distribution. From the beginning ADER was designed with the end-user as the priority and the future
 										developer always in mind. The error messages are plentiful and informative while the code comments are
-										crisp and meaningful just as the code itself is clean and straightforward. 
+										crisp and meaningful just as the code itself is clean and straightforward.
 										ADER's creation as a test-driven development saved myself dozens of hours
 										in terms of debugging and adaptation. The development of ADER spanned many years and of course the
 										design requirements and objectives changed along the way with its comprehensive test suite easing
@@ -101,10 +131,27 @@
 										research codes. As such the biggest challenge in creating ADER was integrating with and understanding
 										the base code as it was not written cleanly or with future developers in mind. My favorite error message from
 										SERPENT may have been "Error: [****] we shouldn't be here". That said, the development team for SERPENT 2
-										is very easy to work.</p>
+										is very easy to work with.</p>
+
+										<h3>Working at the source level</h3>
+										<p>There is a meaningful difference between running a Monte Carlo transport code and modifying one.
+										Writing input decks means learning an interface. Extending the source means learning the physics
+										implementation, the data structures the tallies live in, the memory model, and the assumptions the
+										original authors never wrote down. ADER required the second kind of understanding, sustained across
+										several years and several major upstream releases.</p>
+
+										<p>I presented ADER to the international Serpent developer and user community at the
+										<strong>5th International Serpent User Group Meeting</strong> in Knoxville, Tennessee, and published
+										on it at PHYSOR 2016 and the Molten Salt Reactor Workshop at Oak Ridge. The methodology that came out
+										of it appeared in <em>Annals of Nuclear Energy</em>.</p>
 
 										<p>ADER is not my only software project by far, but it is my largest and one that I'm proud of - not because
 										I 'completed' it but because I know I built it such that it would live on past my care of it.</p>
+
+										<ul class="actions">
+											<li><a href="https://www.github.com/ddwooten/ADER_pub" class="button">View the source</a></li>
+											<li><a href="nuclear.html" class="button">Publications &amp; background</a></li>
+										</ul>
 
 									</section>
 
@@ -113,7 +160,7 @@
 					</div>
 				</div>
 
-			<!-- Footer -->
+			<!-- Contact -->
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
@@ -131,7 +178,7 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Daniel Wooten. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 

@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Nuclear Engineering - Daniel Wooten</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="Dr. Daniel Wooten - computational nuclear engineer. Monte Carlo neutron transport, depletion and fuel cycle simulation. Author of ADER, a 30,000-line extension to SERPENT 2." />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload landing">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+                <header id="header">
+                    <h1 id="logo"><a href="index.html">Daniel Wooten</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="nuclear.html">Nuclear</a></li>
+                            <li><a href="coming_soon.html">DanBot</a></li>
+                            <li>
+                                <a href="#">Projects</a>
+                                <ul>
+                                    <li><a href="index.html#two">Card AI R&amp;D</a></li>
+                                    <li><a href="ader.html">ADER</a></li>
+                                    <li><a href="chatbot.html">Creation of DanBot</a></li>
+                                    <li><a href="emotion.html">Emotional Sight</a></li>
+                                    <li><a href="recommender.html">Recommenders</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="resume.html">Resume</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+            <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h2>Dr. Daniel Wooten</h2>
+                            <p>Computational Nuclear Engineer<br />
+                            Monte Carlo Transport &middot; Depletion &middot; Fuel Cycle Simulation</p>
+                        </header>
+                        <span class="image"><img src="images/face.jpg" alt="" /></span>
+                    </div>
+                    <a href="#one" class="goto-next scrolly">Next</a>
+                </section>
+
+            <!-- One -->
+                <section id="one" class="spotlight style1 bottom">
+                    <span class="image fit main"><img src="images/peak.jpg" alt="" /></span>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 col-12-medium">
+                                    <header>
+                                        <h2>Reactor Physics</h2>
+                                        <p>Ph.D. in Nuclear Engineering, UC Berkeley</p>
+                                    </header>
+                                </div>
+                                <div class="col-4 col-12-medium">
+                                    <p>My doctoral work extended <strong>SERPENT 2</strong> &mdash; an industry-standard
+                                    continuous-energy Monte Carlo reactor physics code written in C &mdash; by roughly
+                                    <strong>30,000 lines</strong>, producing a first-of-its-kind fuel-cycle depletion
+                                    capability for circulating, liquid-fueled reactors. Six publications and a granted
+                                    US patent, plus conference presentations including the International Serpent User
+                                    Group Meeting.</p>
+                                </div>
+                                <div class="col-4 col-12-medium">
+                                    <p>Since 2020 I have shipped large-scale numerical and machine-learning systems into
+                                    production under regulatory audit. I am looking to bring that engineering discipline
+                                    back to reactor analysis &mdash; a domain where the verification burden is the whole
+                                    point rather than an afterthought.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#two" class="goto-next scrolly">Next</a>
+                </section>
+
+            <!-- Two -->
+                <section id="two" class="spotlight style3 bottom">
+                    <span class="image fit main"><img src="images/tower.jpg" alt="" /></span>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 col-12-medium">
+                                    <header>
+                                        <h2>ADER</h2>
+                                        <p><b>A</b>dvanced <b>D</b>epletion <b>E</b>xtension for <b>R</b>eprocessing</p>
+                                    </header>
+                                    <ul class="actions">
+                                        <li><a href="ader.html" class="button">Read More</a></li>
+                                        <li><a href="https://www.github.com/ddwooten/ADER_pub" class="button">Source</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 col-12-medium">
+                                    <strong>Source level, not input-deck level.</strong><br />
+                                    ADER modifies the SERPENT 2 C source directly. I built it to the standard the work
+                                    required: roughly <strong>15,000 lines of unit and integration tests</strong> in C
+                                    and Python, a complete user manual and API, all of it version-controlled. I
+                                    presented it to the international Serpent community at the 5th Serpent User Group
+                                    Meeting in Knoxville.
+                                </div>
+                                <div class="col-4 col-12-medium">
+                                    <strong>A first-of-its-kind capability</strong><br />
+                                    At its core is a chemistry-aware <strong>linear optimization engine</strong> that
+                                    operates on the depletion state, allowing fuel composition to be <em>solved</em>
+                                    against physical and chemical constraints rather than assumed as an input. Only a
+                                    redacted version of the source is public.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#three" class="goto-next scrolly">Next</a>
+                </section>
+
+            <!-- Three -->
+                <section id="three" class="spotlight style2 right">
+                    <span class="image fit main"><img src="images/glacier.jpg" alt="" /></span>
+                    <div class="content">
+                        <header>
+                            <h2>Reprocessing is the Point</h2>
+                            <p>The R in ADER</p>
+                        </header>
+                        <p>I wrote ADER because the fuel-cycle tools available for reactors that move and reprocess
+                        their fuel rested on assumptions I could not defend, and I wanted depletion results I would be
+                        willing to put in front of a regulator.</p>
+                        <p>In a recycling fuel cycle, composition stops being a given and becomes a decision variable
+                        coupled to the depletion state. That is a constrained optimization problem sitting inside a
+                        Monte Carlo transport calculation, and it is precisely what ADER was built to solve. Any program
+                        pursuing fuel recycling alongside the reactor itself is working on the problem I spent my
+                        doctorate on.</p>
+                        <ul class="actions">
+                            <li><a href="ader.html" class="button">How it was built</a></li>
+                        </ul>
+                    </div>
+                    <a href="#four" class="goto-next scrolly">Next</a>
+                </section>
+
+            <!-- Four -->
+                <section id="four" class="spotlight style3 left">
+                    <span class="image fit main bottom"><img src="images/dantalk.jpg" alt="" /></span>
+                    <div class="content">
+                        <header>
+                            <h2>Applied Nuclear Experience</h2>
+                            <p>Oak Ridge National Laboratory &middot; TerraPower &middot; TVA</p>
+                        </header>
+                        <p><strong>ORNL, Reactor &amp; Nuclear Systems Division.</strong> Researched and documented
+                        computational modeling options for kinetic response simulation in circulating-fuel reactors.
+                        The resulting survey became a peer-reviewed review paper co-authored with ORNL's Jeffrey J. Powers.</p>
+                        <p><strong>TerraPower, reactor safety.</strong> Sodium fast reactor work. I built an automated
+                        Python <strong>RELAP5</strong> input generator for the safety group, removing hand-construction
+                        of thermal-hydraulic input decks.</p>
+                        <p><strong>Tennessee Valley Authority, reactor analysis.</strong> Designed a BWR control blade
+                        history monitoring and assessment library, with data scrapers running against live reactor
+                        operational data.</p>
+                    </div>
+                    <a href="#five" class="goto-next scrolly">Next</a>
+                </section>
+
+            <!-- Five -->
+                <section id="five" class="wrapper style1 special fade-up">
+                    <div class="container">
+                        <header class="major">
+                            <h2>What Six Years in Production Bought</h2>
+                            <p>It reads as a detour. It is not.</p>
+                        </header>
+                        <div class="box alt">
+                            <div class="row gtr-uniform">
+                                <section class="col-4 col-6-medium col-12-xsmall">
+                                    <span class="icon solid alt major fa-check-double"></span>
+                                    <h3>Verification Under Audit</h3>
+                                    <p>Six years validating stochastic models in a domain where every decision is
+                                    auditable to a regulator &mdash; including an automated evaluation harness for
+                                    exactly that purpose.</p>
+                                </section>
+                                <section class="col-4 col-6-medium col-12-xsmall">
+                                    <span class="icon solid alt major fa-cogs"></span>
+                                    <h3>Numerics at Scale</h3>
+                                    <p>C, C++, Python and Fortran; MPI, OpenMP and CUDA; constrained optimization,
+                                    sequential Monte Carlo and Bayesian inference on real hardware.</p>
+                                </section>
+                                <section class="col-4 col-6-medium col-12-xsmall">
+                                    <span class="icon solid alt major fa-atom"></span>
+                                    <h3>Modern Tooling</h3>
+                                    <p>A working command of current ML and LLM tooling that most neutronics groups do
+                                    not have in the room &mdash; brought back to reactor analysis, not away from it.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Six -->
+                <section id="six" class="wrapper style1">
+                    <div class="container">
+                        <header class="major">
+                            <h2>Publications &amp; Presentations</h2>
+                        </header>
+                        <div class="row gtr-150">
+                            <div class="col-12">
+                                <ol>
+                                    <li>Wooten, D., &amp; Fratoni, M. (2020). &ldquo;Linear optimization for predicting
+                                    material compositions in molten salt reactors.&rdquo;
+                                    <em>Annals of Nuclear Energy</em>, <strong>139</strong>, 107159.</li>
+
+                                    <li>Wooten, D., &amp; Powers, J.J. (2018). &ldquo;A review of molten salt reactor
+                                    kinetics models.&rdquo; <em>Nuclear Science and Engineering</em>,
+                                    <strong>191</strong>(3), 203&ndash;230.
+                                    <a href="https://doi.org/10.1080/00295639.2018.1480182">doi:10.1080/00295639.2018.1480182</a></li>
+
+                                    <li>Shannon, S.C., Knappe, D., Byrns, B., Wooten, D., &amp; Lindsay, A. (2016).
+                                    <strong>U.S. Patent No. 9,475,710.</strong> Washington, DC: U.S. Patent and
+                                    Trademark Office.</li>
+
+                                    <li>Byrns, B., Wooten, D., Lindsay, A., &amp; Shannon, S. (2012). &ldquo;A VHF driven
+                                    coaxial atmospheric air plasma: electrical and optical characterization.&rdquo;
+                                    <em>Journal of Physics D: Applied Physics</em>, <strong>45</strong>(19), 195204.</li>
+
+                                    <li>Byrns, B., Wooten, D., &amp; Shannon, S. (2011). &ldquo;Design and characterization
+                                    of a novel coaxial VHF plasma source for air plasma formation.&rdquo;</li>
+
+                                    <li>Wooten, D., Byrns, B., &amp; Shannon, S. (2011). &ldquo;RF atmospheric plasma based
+                                    air filtration using porous metals.&rdquo; <em>IEEE International Conference on
+                                    Plasma Science</em>.</li>
+                                </ol>
+
+                                <h3>Conference Presentations</h3>
+                                <ul>
+                                    <li>&ldquo;ADER: Advanced Depletion Extension for Reprocessing &mdash; A SERPENT 2
+                                    Mod.&rdquo; 2nd Annual Molten Salt Reactor Workshop, Oak Ridge, TN, 2016.</li>
+                                    <li>&ldquo;Enhanced Fidelity Depletion for Molten Salt Reactors.&rdquo;
+                                    <em>PHYSOR 2016</em>, Sun Valley, ID.</li>
+                                    <li>&ldquo;Advanced Depletion Extension for Reprocessing (ADER) for SERPENT 2.&rdquo;
+                                    5th International Serpent User Group Meeting, Knoxville, TN, 2015.</li>
+                                </ul>
+
+                                <h3>Dissertation</h3>
+                                <p>Wooten, D. (2019). <em>Predicting Fuel Salt Composition via Linear Optimization in
+                                Molten Salt Reactors.</em> University of California, Berkeley.</p>
+
+                                <h3>Fellowships &amp; Honors</h3>
+                                <ul>
+                                    <li><strong>NSSC Fellow</strong> &mdash; Nuclear Science and Security Consortium, 2019</li>
+                                    <li><strong>U.S. Nuclear Regulatory Commission Fellow</strong>, 2017&ndash;2019</li>
+                                    <li><strong>Berkeley Graduate Fellow</strong>, 2016&ndash;2017</li>
+                                    <li><strong>NEUP Fellow</strong> &mdash; DOE Nuclear Energy University Program, 2013&ndash;2016</li>
+                                    <li><strong>American Nuclear Society Scholarship</strong>, 2010&ndash;2015</li>
+                                </ul>
+
+                                <h3>Codes &amp; Methods</h3>
+                                <p>SERPENT 2 (code-modification level) &middot; Monte Carlo neutron transport &middot;
+                                depletion and fuel cycle analysis &middot; multigroup neutron diffusion &middot; reactor
+                                kinetics &middot; RELAP5 &middot; constrained and linear optimization &middot; MPI,
+                                OpenMP, CUDA</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Contact -->
+                <section id="seven" class="wrapper style2 special fade">
+                    <div class="container">
+                        <header>
+                            <h2>Contact Me</h2>
+                            <p>Email: DanielDavidWooten@gmail.com</p>
+                        </header>
+                        <ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/danieldavidwooten" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://www.instagram.com/utentog" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="https://www.github.com/ddwooten" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </div>
+                </section>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <ul class="copyright">
+                        <li>&copy; Daniel Wooten. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </footer>
+
+        </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

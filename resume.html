@@ -15,13 +15,15 @@
                     <nav id="nav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
+                            <li><a href="nuclear.html">Nuclear</a></li>
                             <li><a href="coming_soon.html">DanBot</a></li>
                             <li>
                                 <a href="#">Projects</a>
                                 <ul>
+                                    <li><a href="index.html#two">Card AI R&amp;D</a></li>
+                                    <li><a href="ader.html">ADER</a></li>
                                     <li><a href="chatbot.html">Creation of DanBot</a></li>
                                     <li><a href="emotion.html">Emotional Sight</a></li>
-                                    <li><a href="ader.html">ADER</a></li>
                                     <li><a href="recommender.html">Recommenders</a></li>
                                 </ul>
                             </li>
@@ -34,15 +36,16 @@
                     <div class="container">
                         <header class="major">
                             <h2>Dr. Daniel Wooten</h2>
-                            <p>Artificial Intelligence specialist focusing on applications of LLMs to time series data</p>
+                            <p>Computational scientist &mdash; production machine learning and nuclear reactor simulation</p>
                         </header>
 
                         <section>
                                 <header>
                                     <h2>Skills</h2>
                                 </header>
-                                <p><b>Programming Languages:</b> Python 3 (10+ years), C/C++/C# (5+ years), Java (2+ years)</p>
-                                <p><b>Tools:</b> Pandas, Numpy, RegEx, Scikit-learn, Matplotlib, PyTorch, CUDA</p>
+                                <p><b>Programming Languages:</b> Python 3 (10+ years), C/C++/C# (5+ years), Fortran, Java (2+ years), MATLAB, R</p>
+                                <p><b>Tools:</b> Pandas, Numpy, RegEx, Scikit-learn, Matplotlib, PyTorch, TensorFlow, CUDA, MPI, OpenMP, Git</p>
+                                <p><b>Reactor physics &amp; simulation:</b> SERPENT 2 (code-modification level), Monte Carlo neutron transport, depletion and fuel cycle analysis, multigroup neutron diffusion, reactor kinetics, RELAP5, constrained and linear optimization</p>
                                 <p><b>Communication:</b> Expert public speaker and technical communicator; skilled at bridging the gap between complex research and stakeholder needs.</p>
 
                                 <hr />
@@ -50,7 +53,7 @@
                                 <header>
                                     <h2>Experience</h2>
                                 </header>
-                                
+
                                 <p><b>Principal Data Scientist: Gen-AI</b> - Capital One Bank - Dec 2024 to Present<br>
                                 - Designed and deployed LLM model for credit risk evaluation increasing accuracy by 4.5% resulting in NPV over $90 million<br>
                                 - Created and launched LLM-Judge for LLM output evaluation resulting in $300k annual savings<br>
@@ -68,10 +71,64 @@
                                 <hr />
 
                                 <header>
+                                    <h2>Nuclear &amp; Computational Physics Experience</h2>
+                                    <p>Full detail on the <a href="nuclear.html">nuclear work page</a> and the <a href="ader.html">ADER project page</a>.</p>
+                                </header>
+
+                                <p><b>Graduate Researcher: Reactor Physics &amp; Fuel Cycle Methods</b> - UC Berkeley - Aug 2013 to Dec 2019<br>
+                                - Architected ADER, a ~30,000 line C extension to the SERPENT 2 Monte Carlo reactor physics code, creating a first-of-its-kind fuel cycle depletion capability for circulating, liquid-fueled reactors<br>
+                                - Designed a chemistry-aware linear optimization engine operating on the depletion state, solving fuel composition against physical and chemical constraints rather than assuming it<br>
+                                - Built to production standard: ~15,000 lines of unit and integration tests in C and Python, complete user manual and API documentation, fully version-controlled<br>
+                                - Established applicability ranges for point-reactor kinetics in circulating-fuel systems via time-resolved multigroup neutron diffusion<br>
+                                - Graduate Student Instructor, NE150 Neutron Diffusion Theory</p>
+
+                                <p><b>Visiting Researcher: Reactor &amp; Nuclear Systems Division</b> - Oak Ridge National Laboratory - Summer 2016<br>
+                                - Evaluated and documented computational modeling options for kinetic response simulation in circulating-fuel reactors; the resulting survey became a peer-reviewed review paper co-authored with ORNL's Jeffrey J. Powers</p>
+
+                                <p><b>Reactor Safety Intern: Sodium Fast Reactor</b> - TerraPower LLC - Summer 2015<br>
+                                - Developed an automated Python RELAP5 input generator for the reactor safety team, removing hand-construction of thermal-hydraulic input decks</p>
+
+                                <p><b>Reactor Analysis Intern</b> - Tennessee Valley Authority - Summer 2012<br>
+                                - Designed and developed a BWR control blade history monitoring and assessment library, with data scrapers running against live reactor operational data</p>
+
+                                <hr />
+
+                                <header>
                                     <h2>Education</h2>
                                 </header>
                                 <p><b>UC Berkeley</b> - Dec '19<br>
                                 Ph.D. in Nuclear Engineering: Designated Emphasis in Computational and Data Science Engineering</p>
+
+                                <p><b>UC Berkeley</b> - May '17<br>
+                                M.S. in Nuclear Engineering</p>
+
+                                <p><b>North Carolina State University</b> - May '13<br>
+                                B.S. in Nuclear Engineering, summa cum laude</p>
+
+                                <hr />
+
+                                <header>
+                                    <h2>Publications &amp; Presentations</h2>
+                                </header>
+                                <ol>
+                                    <li>Wooten, D., Fratoni, M. &ldquo;Linear optimization for predicting material compositions in molten salt reactors.&rdquo; <em>Annals of Nuclear Energy</em>, 2020.</li>
+                                    <li>Wooten, D., Powers, J.J. &ldquo;A Review of Molten Salt Reactor Kinetics Models.&rdquo; <em>Nuclear Science and Engineering</em>, <b>191</b>(3), 2018.</li>
+                                    <li>Wooten, D.D., Fratoni, M. &ldquo;ADER: Advanced Depletion Extension for Reprocessing &mdash; A SERPENT 2 Mod.&rdquo; 2nd Annual Molten Salt Reactor Workshop, Oak Ridge, TN, 2016.</li>
+                                    <li>Wooten, D.D., Fratoni, M. &ldquo;Enhanced Fidelity Depletion for Molten Salt Reactors.&rdquo; <em>PHYSOR 2016</em>, Sun Valley, ID.</li>
+                                    <li>Wooten, D.D., Fratoni, M. &ldquo;Advanced Depletion Extension for Reprocessing (ADER) for SERPENT 2.&rdquo; 5th International Serpent User Group Meeting, Knoxville, TN, 2015.</li>
+                                    <li>Byrns, B., et al. &ldquo;A VHF Driven Coaxial Atmospheric Air Plasma: electrical and optical characterization.&rdquo; <em>Journal of Physics D: Applied Physics</em>, <b>45</b>(19), 2012.</li>
+                                </ol>
+
+                                <hr />
+
+                                <header>
+                                    <h2>Fellowships &amp; Honors</h2>
+                                </header>
+                                <p>NSSC Fellow, Nuclear Science and Security Consortium (2019)<br>
+                                U.S. Nuclear Regulatory Commission Fellow (2017&ndash;2019)<br>
+                                Berkeley Graduate Fellow (2016&ndash;2017)<br>
+                                NEUP Fellow, DOE Nuclear Energy University Program (2013&ndash;2016)<br>
+                                American Nuclear Society Scholarship (2010&ndash;2015)</p>
 
                             </section>
 
@@ -85,4 +142,29 @@
                             <p>Email: DanielDavidWooten@gmail.com</p>
                         </header>
                         <ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/danieldavidwooten" class="icon brands alt fa-linkedin-in"><span class="label">
+                            <li><a href="https://www.linkedin.com/in/danieldavidwooten" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://www.instagram.com/utentog" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="https://www.github.com/ddwooten" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </div>
+                </section>
+
+            <footer id="footer">
+                    <ul class="copyright">
+                        <li>&copy; Daniel Wooten. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </footer>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
