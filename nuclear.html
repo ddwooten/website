@@ -65,18 +65,19 @@
                                     </header>
                                 </div>
                                 <div class="col-4 col-12-medium">
-                                    <p>My doctoral work extended <strong>SERPENT 2</strong> &mdash; an industry-standard
-                                    continuous-energy Monte Carlo reactor physics code written in C &mdash; by roughly
+                                    <p>My doctoral work extended <strong>SERPENT 2</strong> (an industry-standard
+                                    continuous-energy Monte Carlo reactor physics code written in C) by roughly
                                     <strong>30,000 lines</strong>, producing a first-of-its-kind fuel-cycle depletion
                                     capability for circulating, liquid-fueled reactors. Six publications and a granted
                                     US patent, plus conference presentations including the International Serpent User
                                     Group Meeting.</p>
                                 </div>
                                 <div class="col-4 col-12-medium">
-                                    <p>Since 2020 I have shipped large-scale numerical and machine-learning systems into
-                                    production under regulatory audit. I am looking to bring that engineering discipline
-                                    back to reactor analysis &mdash; a domain where the verification burden is the whole
-                                    point rather than an afterthought.</p>
+                                    <p>Since 2020 I've shipped large-scale numerical and
+                                    machine-learning systems into production under regulatory audit, six years of
+                                    apprenticeship in being made to prove things. I'd like to bring that back to
+                                    reactor analysis &mdash; a domain where the verification burden was never the
+                                    afterthought it tends to be elsewhere.</p>
                                 </div>
                             </div>
                         </div>
@@ -101,12 +102,12 @@
                                     </ul>
                                 </div>
                                 <div class="col-4 col-12-medium">
-                                    <strong>Source level, not input-deck level.</strong><br />
-                                    ADER modifies the SERPENT 2 C source directly. I built it to the standard the work
-                                    required: roughly <strong>15,000 lines of unit and integration tests</strong> in C
-                                    and Python, a complete user manual and API, all of it version-controlled. I
-                                    presented it to the international Serpent community at the 5th Serpent User Group
-                                    Meeting in Knoxville.
+                                    <strong>Source level rather than input-deck level.</strong><br />
+                                    ADER modifies the SERPENT 2 C source directly, a choice that set the
+                                    standard everything else had to meet: roughly <strong>15,000 lines of unit and integration tests</strong>
+                                    in C and Python, a complete user manual and API, all of it under version control
+                                    from the first commit. I presented it to the international Serpent community at the
+                                    5th Serpent User Group Meeting in Knoxville.
                                 </div>
                                 <div class="col-4 col-12-medium">
                                     <strong>A first-of-its-kind capability</strong><br />
@@ -126,17 +127,17 @@
                     <span class="image fit main"><img src="images/glacier.jpg" alt="" /></span>
                     <div class="content">
                         <header>
-                            <h2>Reprocessing is the Point</h2>
+                            <h2>Why I Wrote It</h2>
                             <p>The R in ADER</p>
                         </header>
                         <p>I wrote ADER because the fuel-cycle tools available for reactors that move and reprocess
                         their fuel rested on assumptions I could not defend, and I wanted depletion results I would be
                         willing to put in front of a regulator.</p>
-                        <p>In a recycling fuel cycle, composition stops being a given and becomes a decision variable
-                        coupled to the depletion state. That is a constrained optimization problem sitting inside a
-                        Monte Carlo transport calculation, and it is precisely what ADER was built to solve. Any program
-                        pursuing fuel recycling alongside the reactor itself is working on the problem I spent my
-                        doctorate on.</p>
+                        <p>In a recycling fuel cycle, composition stops being a given and becomes a decision
+                        variable coupled to the depletion state &mdash; a constrained optimization problem sitting
+                        inside a Monte Carlo transport calculation. That is the shape of the problem ADER was built
+                        to solve. Any program pursuing fuel recycling alongside the reactor itself is working on that
+                        same problem, an endeavor my doctorate was given over to almost entirely.</p>
                         <ul class="actions">
                             <li><a href="ader.html" class="button">How it was built</a></li>
                         </ul>
@@ -170,7 +171,7 @@
                     <div class="container">
                         <header class="major">
                             <h2>What Six Years in Production Bought</h2>
-                            <p>It reads as a detour. It is not.</p>
+                            <p>Numerics, verification, and the habit of having to prove it.</p>
                         </header>
                         <div class="box alt">
                             <div class="row gtr-uniform">
@@ -190,10 +191,13 @@
                                 <section class="col-4 col-6-medium col-12-xsmall">
                                     <span class="icon solid alt major fa-atom"></span>
                                     <h3>Modern Tooling</h3>
-                                    <p>A working command of current ML and LLM tooling that most neutronics groups do
-                                    not have in the room &mdash; brought back to reactor analysis, not away from it.</p>
+                                    <p>A working command of current ML and LLM tooling, and a fairly clear idea of
+                                    which reactor-analysis problems it is genuinely good for, a shorter
+                                    list than the enthusiasm around it suggests.</p>
                                 </section>
                             </div>
+                            <p>If your program is building something that moves its fuel, I would enjoy talking
+                            about where our problems overlap.</p>
                         </div>
                     </div>
                 </section>

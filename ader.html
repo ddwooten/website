@@ -98,17 +98,17 @@
 										<span class="image fit"><img src="images/town.jpg" alt="" /></span>
 
 										<h3>Why reprocessing</h3>
-										<p>The R in ADER is for <strong>Reprocessing</strong>, and it is the whole reason the project exists.
+										<p>The R in ADER is for <strong>Reprocessing</strong>, the whole reason the project exists.
 										Conventional depletion tools assume a fuel load: you tell the code what is in the core, and it tells you
 										what happens to it. That assumption quietly breaks for any reactor that moves and reprocesses its fuel.
-										Composition is no longer an input. It becomes a decision variable, coupled to the depletion state, and
-										it has to satisfy physical and chemical constraints at every step.</p>
+										Composition is no longer an input. It is a decision variable coupled to the depletion state, one obliged
+										to satisfy physical and chemical constraints at every step.</p>
 
-										<p>ADER's core is a <strong>chemistry-aware linear optimization engine</strong> that operates on the
-										depletion state and <em>solves</em> for fuel-load composition rather than accepting it. I built it because
-										the fuel-cycle tools available for circulating, liquid-fueled systems rested on assumptions I could not
-										defend, and I wanted depletion results I would be willing to put in front of a regulator. Any program
-										pursuing fuel recycling alongside a reactor is working on the same problem.</p>
+										<p>ADER's core is a <strong>chemistry-aware linear optimization engine</strong>, one that operates on
+										the depletion state and <em>solves</em> for fuel-load composition instead of accepting it as given. I built it
+										because the fuel-cycle tools available for circulating, liquid-fueled systems rested on assumptions I could
+										not defend &mdash; defensibility, not speed, being what I needed out of it. Any program pursuing fuel
+										recycling alongside a reactor is working on the same problem.</p>
 
 										<h3>Building off of legacy code</h3>
 										<p> The ADER code was the primary project of my graduate thesis at UC Berkeley. ADER was
@@ -134,11 +134,12 @@
 										is very easy to work with.</p>
 
 										<h3>Working at the source level</h3>
-										<p>There is a meaningful difference between running a Monte Carlo transport code and modifying one.
-										Writing input decks means learning an interface. Extending the source means learning the physics
-										implementation, the data structures the tallies live in, the memory model, and the assumptions the
-										original authors never wrote down. ADER required the second kind of understanding, sustained across
-										several years and several major upstream releases.</p>
+										<p>Running a Monte Carlo transport code and modifying one are different jobs. Writing input decks
+										means learning an interface; extending the source means learning the physics implementation, the data
+										structures the tallies live in, the memory model, and all the assumptions the original authors never
+										bothered to write down. ADER needed the second kind of understanding, sustained across several years and
+										several major upstream releases. It is a slower way to spend a doctorate. For a tool meant to be
+										trusted it is, I think, the only honest one.</p>
 
 										<p>I presented ADER to the international Serpent developer and user community at the
 										<strong>5th International Serpent User Group Meeting</strong> in Knoxville, Tennessee, and published
